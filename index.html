@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(209, 175, 117, 0.596);
+
+        }
+        .container div{
+            width: 200px;
+            height:200px;
+            border-radius: 5px;
+            margin: 3px;
+            border: 2px solid black;
+
+        }
+        .container div:hover{
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            margin: 150px auto 0 ;
+            flex-direction: row;
+
+            /* padding-left: auto; */
+            flex-wrap: wrap;
+            /* width: 414px; */
+            width: 25.9rem;
+            /* border: 1px solid black; */
+
+            /* border: 1px solid black; */
+        }
+        .magenta{
+            background-color: magenta;
+        }
+        .skyblue{
+            background-color: skyblue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .blue{
+            background-color: blue;
+        }
+        h2{
+            margin-top: 30px;
+            /* font-size: 30px; */
+        }
+        .flash{
+            background-color: white;
+        }
+        .user{
+            background-color: rgb(46, 164, 46);
+        }
+        .name{
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZrNzN5NzBjdWttcnkxdWR6bTZxZHFpYnR1cmhzdnlyY25yaDQweCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cmegx6SssTKmEFEcwj/giphy.gif");
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-size: contain;
+        }
+
+    </style>
+</head>
+<body>
+    <span class="name">Simon Says Game</span>
+    <h2>press any key to start the game</h2>
+    <div class="container">
+        <div class="magenta btn" type="button" id="magenta"></div>
+        <div class="skyblue btn" type="button" id="skyblue"></div>
+        <div class="orange btn" type="button" id="orange"></div>
+        <div class="blue btn" type="button" id="blue"></div>
+    </div>
+    <script src="simon.js"></script>
+</body>
+</html>
